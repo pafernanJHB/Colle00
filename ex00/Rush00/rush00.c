@@ -6,7 +6,7 @@
 /*   By: pafernan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 10:10:49 by pafernan          #+#    #+#             */
-/*   Updated: 2020/07/14 11:12:48 by pafernan         ###   ########.fr       */
+/*   Updated: 2020/07/15 10:28:52 by pafernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,31 @@
 
 int		rush(int a)
 {	
-	if (a == 0 || a > a - 1)
+	char c, d, e, f;
+	c = 'o';
+	d = '-';
+	e = '|';
+	f = ' ';
+	
+	while (a > 0)
 	{
-		ft_putchar('o');
+		if (a == 1)
+		{
+			ft_putchar(c);
+		}
+		else if (a > 1  && a < a - 1 )
+		{
+			ft_putchar(d);
+		}
+		a--;
 	}
-	else if(a <= a - 1 || a > 0)
-	{
-		ft_putchar('-');
-	}
-	else if(a < 0)
-	{
-		return	(0);
-	}
-	a--;
+	//while (b >= 0 )
+	//{
+	//	if (b > 1)
+	//	{
+	//		ft_putchar(c)
+	//	}
+	//}
+
 	return	(0);
 }
